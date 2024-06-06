@@ -152,3 +152,4 @@ C:\Users\ovsii\RiderProjects\lab9\lab9\obj\Debug\net8.0\refint\lab9.dll
 C:\Users\ovsii\RiderProjects\lab9\lab9\obj\Debug\net8.0\lab9.pdb
 C:\Users\ovsii\RiderProjects\lab9\lab9\obj\Debug\net8.0\lab9.genruntimeconfig.cache
 C:\Users\ovsii\RiderProjects\lab9\lab9\obj\Debug\net8.0\ref\lab9.dll
+C:\Users\ovsii\RiderProjects\lab9\lab9\obj\Debug\net8.0\lab9.sourcelink.json

@@ -1,8 +1,7 @@
 using lab9.Context;
 using lab9.Middlewares;
-using lab9.Service;
-using lab9.Service.ServiceInterface;
-using lab9.Repository;
+using lab9.Services;
+using lab9.Services.ServiceInterfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,10 +13,8 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 // Configure DbContext with SQL Server
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-// Register repository and services
-builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<IPrescriptionService, PrescriptionService>();
+builder.Services.AddScoped<PatientsService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
